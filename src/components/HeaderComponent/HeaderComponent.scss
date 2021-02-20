@@ -1,0 +1,9 @@
+@import '../../globals.scss';
+
+header {
+  height: $header-height;
+  position: fixed;
+  width: 100%;
+  background-color: red;
+  z-index: 999;
+}

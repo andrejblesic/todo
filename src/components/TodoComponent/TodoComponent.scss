@@ -1,0 +1,59 @@
+@import '../../globals.scss';
+
+.todo {
+  transition: all 200ms;
+  width: 600px;
+  padding: 20px;
+  max-width: calc(100vw - 80px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  position: relative;
+  transform: scaleY(1);
+  transition: transform 200ms;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  .todo-text {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .todo-time {
+    margin: 0;
+  }
+  .remove-todo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: tomato;
+    cursor: pointer;
+    transition: box-shadow 300ms;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    &:hover {
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &.deleted {
+    transform: scaleY(0);
+  }
+  &.new {
+    animation-name: slidedown;
+    animation-iteration-count: 1;
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes slidedown {
+  0% {transform: scaleY(0)}
+  100% {transform: scaleY(1)}
+}

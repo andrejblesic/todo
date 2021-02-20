@@ -1,0 +1,9 @@
+@import './globals.scss';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding-top: $header-height;
+  font-family: $font-family;
+}

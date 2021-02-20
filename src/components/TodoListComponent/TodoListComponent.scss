@@ -1,0 +1,9 @@
+@import '../../globals.scss';
+
+.todo-wrapper {
+  padding-top: $header-height;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
