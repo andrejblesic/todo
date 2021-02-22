@@ -1,7 +1,7 @@
 @import '../../globals.scss';
 
 .todo {
-  transition: all 200ms;
+  transition: all 150ms;
   width: 600px;
   padding: 20px;
   max-width: calc(100vw - 80px);
@@ -11,7 +11,6 @@
   margin-bottom: 20px;
   position: relative;
   transform: scaleY(1);
-  transition: transform 200ms;
   &:hover {
     transform: scale(1.02);
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
@@ -48,7 +47,7 @@
   &.new {
     animation-name: slidedown;
     animation-iteration-count: 1;
-    animation-duration: 200ms;
+    animation-duration: 150ms;
     animation-timing-function: ease-out;
   }
 }

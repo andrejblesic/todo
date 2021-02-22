@@ -23,7 +23,7 @@ export default function TodoListComponent(props) {
     setDeletedTodo(data.deletedId);
     setTimeout(() => {
       getTodods();
-    }, 200);
+    }, 150);
   }
 
   return(

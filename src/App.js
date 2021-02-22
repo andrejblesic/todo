@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setNewTodo('');
-    }, 200);
+    }, 150);
   }, [newTodo]);
 
   return (
